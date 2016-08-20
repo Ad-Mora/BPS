@@ -1,0 +1,4 @@
+.idea/
+Core/secret_settings.py
+*.pyc
+db.sqlite3
