@@ -1,18 +1,40 @@
-.header {
+.header{
     position: fixed;
+    left: 200px;
     height: 60px;
-    width: 100%;
+    width: calc(100% - 200px);
     background-color: #00a3cc;
 }
-.sidebar {
+.header-title{
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+.sidebar{
     position: fixed;
     height: 100%;
-    width: 60px;
+    width: 200px;
     background-color: #00a3cc;
 }
-.intersect {
-    position: absolute;
+.sidebar-item{
+    border-bottom: 1px solid #007a99;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.sidebar-item:hover{
+    background-color: #008fb3;
+}
+.sidebar-item-title{
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    width: 200px;
+    text-align: center;
+}
+.intersect{
     background-color: #007a99;
     height: 60px;
-    width: 60px;
+    width: 200px;
 }
