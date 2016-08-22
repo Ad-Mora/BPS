@@ -1,10 +1,20 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+
+  <link rel="stylesheet" type="text/css" href="{% static "BPSApp/Reset.css" %}">
+  <link rel="stylesheet" type="text/css" href="{% static "BPSApp/Defaults.css" %}">
+  <link rel="stylesheet" type="text/css" href="{% static "BPSApp/Homepage.css" %}">
 </head>
+
 <body>
-This is the BPS/Entwiner homepage
+
+<div class="header"></div>
+<div class="sidebar"></div>
+<div class="intersect"></div>
+
 </body>
 </html>
