@@ -3,11 +3,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>Home</title>
 
-  <link rel="stylesheet" type="text/css" href="{% static "BPSApp/Reset.css" %}">
-  <link rel="stylesheet" type="text/css" href="{% static "BPSApp/Defaults.css" %}">
-  <link rel="stylesheet" type="text/css" href="{% static "BPSApp/Homepage.css" %}">
+  <link rel="stylesheet" type="text/css" href="{% static "BPSApp/CSS/Reset.css" %}">
+  <link rel="stylesheet" type="text/css" href="{% static "BPSApp/CSS/Defaults.css" %}">
+  <link rel="stylesheet" type="text/css" href="{% static "BPSApp/CSS/Homepage.css" %}">
 </head>
 
 <body>
@@ -22,6 +22,27 @@
   </div>
   <div class="sidebar-item">
     <p class="sidebar-item-title">Orders</p>
+  </div>
+</div>
+
+<div class="page-content">
+  <p class="content-header">Customer – Basic Info</p>
+  <div class="form-content">
+
+    <div class="whole-line-field">
+      <p class="input-label">Customer Name:</p>
+      <input class="input-field" type="text">
+    </div>
+
+    <div class="whole-line-field">
+      <p class="input-label">Customer Email:</p>
+      <input class="input-field" type="text">
+    </div>
+
+    <div class="whole-line-field">
+      <p class="input-label">Customer Phone:</p>
+      <input class="input-field" type="text">
+    </div>
   </div>
 </div>
 
