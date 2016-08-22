@@ -26,7 +26,6 @@ ALLOWED_HOSTS = ['entwinerbps.herokuapp.com', 'localhost']
 
 SECRET_KEY = os.environ['SECRET_KEY']
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -116,5 +115,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 # Static root
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 STATIC_URL = '/static/'
