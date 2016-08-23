@@ -2,6 +2,8 @@ body{
     padding-top: 60px;
     padding-left: 200px;
 }
+
+/*----------Header----------*/
 .header{
     position: fixed;
     top: 0px;
@@ -16,6 +18,8 @@ body{
     font-weight: 500;
     color: white;
 }
+
+/*----------Sidebar----------*/
 .sidebar{
     position: fixed;
     top: 0px;
@@ -46,26 +50,29 @@ body{
     width: 200px;
 }
 
-.page-content{
-}
+/*----------Tab Bar----------*/
 .tab-bar{
     height: 35px;
     background-color: #008fb3;
 }
-.tab-bar-item{
+.tab-item{
     display: inline-block;
     width: 200px;
     text-align: center;
-}
-.tab-bar-item:hover{
-    background-color: #007a99;
-    cursor: pointer;
-}
-.tab-name{
+    border-right: 2px solid #007a99;
+
     font-size: 20px;
     font-weight: 500;
     line-height: 35px;
     color: white;
+}
+.tab-item:hover{
+    background-color: #007a99;
+    cursor: pointer;
+}
+
+/*----------Page content----------*/
+.basic-info-page{
 }
 .content-header{
     text-align: center;
