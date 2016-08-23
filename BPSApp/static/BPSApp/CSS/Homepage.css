@@ -71,7 +71,7 @@ body{
     cursor: pointer;
 }
 
-/*----------Page content----------*/
+/*----------Basic Info Page----------*/
 .basic-info-page{
 }
 .content-header{
@@ -96,4 +96,24 @@ body{
 .input-field{
     height: 20px;
     font-size: 18px;
+}
+
+/*----------Address Page----------*/
+.address-page{
+    display: none;
+}
+
+/*----------Contacts Page----------*/
+.contacts-page{
+    display: none;
+}
+
+/*----------Billing Page----------*/
+.billing-page{
+    display: none;
+}
+
+/*----------Notes Page----------*/
+.notes-page{
+    display: none;
 }
