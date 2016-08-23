@@ -31,6 +31,7 @@ body{
 }
 .sidebar-item:hover{
     background-color: #008fb3;
+    cursor: pointer;
 }
 .sidebar-item-title{
     font-weight: 500;
@@ -46,6 +47,25 @@ body{
 }
 
 .page-content{
+}
+.tab-bar{
+    height: 35px;
+    background-color: #008fb3;
+}
+.tab-bar-item{
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+}
+.tab-bar-item:hover{
+    background-color: #007a99;
+    cursor: pointer;
+}
+.tab-name{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 35px;
+    color: white;
 }
 .content-header{
     text-align: center;
