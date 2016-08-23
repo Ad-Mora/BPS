@@ -71,8 +71,20 @@ body{
     cursor: pointer;
 }
 
-/*----------Basic Info Page----------*/
+/*----------Pages----------*/
 .basic-info-page{
+}
+.address-page{
+    display: none;
+}
+.contacts-page{
+    display: none;
+}
+.billing-page{
+    display: none;
+}
+.notes-page{
+    display: none;
 }
 .content-header{
     text-align: center;
@@ -96,24 +108,4 @@ body{
 .input-field{
     height: 20px;
     font-size: 18px;
-}
-
-/*----------Address Page----------*/
-.address-page{
-    display: none;
-}
-
-/*----------Contacts Page----------*/
-.contacts-page{
-    display: none;
-}
-
-/*----------Billing Page----------*/
-.billing-page{
-    display: none;
-}
-
-/*----------Notes Page----------*/
-.notes-page{
-    display: none;
 }
