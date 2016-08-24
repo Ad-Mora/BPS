@@ -24,8 +24,7 @@ var tabBar = (function(){
     pageList = [basicInfoPage, addressPage, contactsPage, billingPage, notesPage];
 
     // tab bar items
-    tabBar = document.querySelector(".tab-bar");
-    tabItems = tabBar.querySelectorAll(".tab-item");
+    tabItems = document.querySelectorAll(".tab-item");
 
     // bind events
     for (var i = 0; i < tabItems.length; i++) {

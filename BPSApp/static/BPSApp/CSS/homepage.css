@@ -1,6 +1,6 @@
 body{
     padding-top: 60px;
-    padding-left: 200px;
+    padding-left: 15%;
 }
 
 /*----------Header----------*/
@@ -8,10 +8,12 @@ body{
     position: fixed;
     top: 0px;
     height: 60px;
-    width: calc(100% - 200px);
+    width: 85%;
     background-color: #00a3cc;
+    text-align: center;
 }
 .header-title{
+    display: inline-block;
     text-align: center;
     line-height: 60px;
     font-size: 26px;
@@ -25,42 +27,35 @@ body{
     top: 0px;
     left: 0px;
     height: 100%;
-    width: 200px;
+    width: 15%;
     background-color: #00a3cc;
 }
-.sidebar-item{
+.sidebar-item-title{
     border-bottom: 1px solid #007a99;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-.sidebar-item:hover{
-    background-color: #008fb3;
-    cursor: pointer;
-}
-.sidebar-item-title{
     font-weight: 500;
     font-size: 18px;
     color: white;
-    width: 200px;
     text-align: center;
+}
+.sidebar-item-title:hover{
+    background-color: #008fb3;
+    cursor: pointer;
 }
 .intersect{
     background-color: #007a99;
     height: 60px;
-    width: 200px;
 }
 
 /*----------Tab Bar----------*/
-.tab-bar{
-    height: 35px;
-    background-color: #008fb3;
-}
 .tab-item{
     display: inline-block;
-    width: 200px;
+    width: 20%;
+    box-sizing: border-box;
     text-align: center;
     border-right: 2px solid #007a99;
-
+    background-color: #008fb3;
     font-size: 20px;
     font-weight: 500;
     line-height: 35px;
