@@ -9,7 +9,7 @@ body{
     top: 0px;
     height: 60px;
     width: 85%;
-    background-color: #00a3cc;
+    background-color: #00A3CC;
     text-align: center;
 }
 .header-title{
@@ -28,10 +28,10 @@ body{
     left: 0px;
     height: 100%;
     width: 15%;
-    background-color: #00a3cc;
+    background-color: #00A3CC;
 }
 .sidebar-item-title{
-    border-bottom: 1px solid #007a99;
+    border-bottom: 1px solid #008fb3;
     padding-top: 20px;
     padding-bottom: 20px;
     font-weight: 500;
@@ -40,7 +40,7 @@ body{
     text-align: center;
 }
 .sidebar-item-title:hover{
-    background-color: #008fb3;
+    background-color: #007a99;
     cursor: pointer;
 }
 .intersect{
@@ -49,41 +49,42 @@ body{
 }
 
 /*----------Option Menu----------*/
-.add-customer{
-    margin-top: 50px;
-    margin-left: 50px;
-    width: 300px;
-    height: 50px;
-    line-height: 50px;
+.options-bar{
+    height: 80px;
+    background-color: #00b8e6;
+}
+.add-customer-button{
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    margin: 20px;
+    line-height: 40px;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
     color: white;
-    background-color: #5cb85c;
+    background-color: #008fb3;
     border-radius: 4px;
 }
-.search-customer{
-    margin-top: 25px;
-    margin-left: 50px;
-    height: 35px;
-    width: 455px;
+.search-customer-wrapper{
+    display: inline-block;
+    width: 375px;
 }
 .search-customer-label{
     display: inline-block;
-    line-height: 35px;
-    font-size: 30px;
+    line-height: 30px;
+    font-size: 20px;
     font-weight: 500;
-    color: #555555;
+    color: white;
 }
 .search-customer-box{
     float: right;
-    display: inline-block;
     width: 200px;
-    height: 35px;
-    font-size: 26px;
-    color: #555555;
-    border: none;
-    border-bottom: 1px solid #555555;
+    height: 30px;
+    font-size: 20px;
+    color: #222222;
+    border-bottom: 1px solid #222222;
+    background-color: transparent;
     outline: none;
     box-sizing: border-box;
 }
