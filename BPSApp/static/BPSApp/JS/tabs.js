@@ -64,10 +64,4 @@ var tabBar = (function(){
         }
     }
 
-
-
-
-
-
-
 })();
