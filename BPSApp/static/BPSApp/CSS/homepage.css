@@ -69,6 +69,22 @@ body{
 .add-customer-button:hover{
     cursor: pointer;
 }
+.cancel-customer-add-button{
+    display: none;
+    width: 180px;
+    height: 40px;
+    margin: 15px 20px 15px 20px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    background-color: #008fb3;
+    border-radius: 4px;
+}
+.cancel-customer-add-button:hover{
+    cursor: pointer;
+}
 .search-customer-wrapper{
     display: inline-block;
     width: 375px;
