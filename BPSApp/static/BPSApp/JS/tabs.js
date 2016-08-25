@@ -63,5 +63,4 @@ var tabBar = (function(){
             currentPageIndex = newPageIndex;
         }
     }
-
 })();
