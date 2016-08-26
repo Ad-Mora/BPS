@@ -1,0 +1,26 @@
+body{
+    padding-top: 60px;
+    padding-left: 15%;
+    background-color: #eeeeee;
+}
+
+/*----------Tab Display----------*/
+.tab-display{
+    display: none;
+}
+.tab-item{
+    display: inline-block;
+    width: 25%;
+    box-sizing: border-box;
+    text-align: center;
+    border-right: 2px solid #007a99;
+    background-color: #008fb3;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 35px;
+    color: white;
+}
+.tab-item:hover{
+    background-color: #007a99 !important;
+    cursor: pointer;
+}

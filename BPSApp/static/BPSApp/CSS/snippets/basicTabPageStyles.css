@@ -1,0 +1,16 @@
+.content-header{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #333333;
+}
+.input-label{
+    display: inline-block;
+    color: #333333;
+    font-size: 18px;
+}
+.input-field{
+    height: 20px;
+    font-size: 18px;
+}

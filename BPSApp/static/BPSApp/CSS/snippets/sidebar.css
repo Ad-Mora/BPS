@@ -1,0 +1,25 @@
+.sidebar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 15%;
+    background-color: #00A3CC;
+}
+.sidebar-item-title{
+    border-bottom: 1px solid #008fb3;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+.sidebar-item-title:hover{
+    background-color: #007a99;
+    cursor: pointer;
+}
+.intersect{
+    background-color: #007a99;
+    height: 60px;
+}

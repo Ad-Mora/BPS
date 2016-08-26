@@ -6,22 +6,20 @@ var tabBar = (function(){
 
     pageIndexDict = {
         "Basic Info": 0,
-        "Address": 1,
-        "Contacts": 2,
-        "Billing": 3,
-        "Notes": 4
+        "Contacts/Addresses": 1,
+        "Billing": 2,
+        "Notes": 3
     };
 
     // collect DOM objects
 
     // content pages
     basicInfoPage = document.querySelector(".basic-info-page");
-    addressPage = document.querySelector(".address-page");
-    contactsPage = document.querySelector(".contacts-page");
+    contactsAndAddressesPage = document.querySelector(".contacts-and-addresses-page");
     billingPage = document.querySelector(".billing-page");
     notesPage = document.querySelector(".notes-page");
 
-    pageList = [basicInfoPage, addressPage, contactsPage, billingPage, notesPage];
+    pageList = [basicInfoPage, contactsAndAddressesPage, billingPage, notesPage];
 
     // tab bar items
     tabItems = document.querySelectorAll(".tab-item");
@@ -53,11 +51,6 @@ var tabBar = (function(){
             var currentPage = pageList[currentPageIndex];
             currentPage.style.display = "none";
             newPage.style.display = "block";
-
-            // unselect the currently selected tab, and select the new one
-            var oldTab = tabItems[currentPageIndex];
-            oldTab.style.backgroundColor = "#008fb3";
-            newTab.style.backgroundColor = "#007a99";
 
             // set the old page index to the new one
             currentPageIndex = newPageIndex;

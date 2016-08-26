@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+
+  <link rel="stylesheet" type="text/css" href="{% static "BPSApp/CSS/snippets/reset.css" %}">
+  <link rel="stylesheet" type="text/css" href="{% static "BPSApp/CSS/snippets/defaults.css" %}">
+  <link rel="stylesheet" type="text/css" href="{% static "BPSApp/CSS/snippets/headerBar.css" %}">
+  <link rel="stylesheet" type="text/css" href="{% static "BPSApp/CSS/snippets/sidebar.css" %}">
+  <link rel="stylesheet" type="text/css" href="{% static "BPSApp/CSS/snippets/optionsBar.css" %}">
+  <link rel="stylesheet" type="text/css" href="{% static "BPSApp/CSS/snippets/basicTabPageStyles.css" %}">
+  <link rel="stylesheet" type="text/css" href="{% static "BPSApp/CSS/snippets/basicInfoTab.css" %}">
+  <link rel="stylesheet" type="text/css" href="{% static "BPSApp/CSS/snippets/contactsAndAddressesTab.css" %}">
+  <link rel="stylesheet" type="text/css" href="{% static "BPSApp/CSS/snippets/billingTab.css" %}">
+  <link rel="stylesheet" type="text/css" href="{% static "BPSApp/CSS/snippets/notesTab.css" %}">
+  <link rel="stylesheet" type="text/css" href="{% static "BPSApp/CSS/sitePages/homepage.css" %}">
+</head>
+
+<body>
+
+{% include "BPSApp/snippets/headerBar.html" %}
+{% include "BPSApp/snippets/sidebar.html" %}
+{% include "BPSApp/snippets/optionsBar.html" %}
+
+<div class="tab-display">
+  <p class="tab-item">Basic Info</p><!--
+  --><p class="tab-item">Contacts/Addresses</p><!--
+  --><p class="tab-item">Billing</p><!--
+  --><p class="tab-item">Notes</p>
+
+  {% include "BPSApp/snippets/basicInfoTab.html" %}
+  {% include "BPSApp/snippets/contactsAndAddressesTab.html" %}
+  {% include "BPSApp/snippets/billingTab.html" %}
+  {% include "BPSApp/snippets/notesTab.html" %}
+</div>
+
+<script src="{% static "BPSApp/JS/tabs.js" %}"></script>
+<script src="{% static "BPSApp/JS/optionBar.js" %}"></script>
+
+</body>
+</html>
