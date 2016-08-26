@@ -5,7 +5,7 @@ var optionBar = (function(){
 
     // get DOM objects
     addCustomerButton = document.getElementsByClassName("add-customer-button")[0];
-    cancelCustomerAddButton = document.getElementsByClassName("cancel-customer-add-button")[0];
+    cancelButton = document.getElementsByClassName("cancel-button")[0];
     searchCustomerLabel = document.getElementsByClassName("search-customer-label")[0];
     searchCustomerFieldWrapper = document.getElementsByClassName("search-customer-field-wrapper")[0];
     searchCustomerField = searchCustomerFieldWrapper.getElementsByClassName("search-customer-field")[0];
@@ -17,7 +17,7 @@ var optionBar = (function(){
 
     // bind events
     addCustomerButton.addEventListener('click', showCustomerFields);
-    cancelCustomerAddButton.addEventListener('click', cancelCustomerAddition);
+    cancelButton.addEventListener('click', resetToOptionMenu);
     searchCustomerField.addEventListener('focus', toggleSearchSuggestions);
     searchCustomerField.addEventListener('blur', toggleSearchSuggestions);
 
@@ -30,13 +30,16 @@ var optionBar = (function(){
         addCustomerButton.style.display = "none";
         searchCustomerLabel.style.display = "none";
         searchCustomerFieldWrapper.style.display = "none";
-        cancelCustomerAddButton.style.display = "inline-block";
+        cancelButton.style.display = "inline-block";
         tabDisplay.style.display = "block";
     }
 
-    function cancelCustomerAddition(event) {
-        cancelCustomerAddButton.style.display = "none";
+    function resetToOptionMenu(event) {
+        cancelButton.style.display = "none";
+        currentRecordSearchNameLabel.style.display = "none";
+        currentRecordSearchName.style.display = "none";
         tabDisplay.style.display = "none";
+
         addCustomerButton.style.display = "inline-block";
         searchCustomerLabel.style.display = "inline-block";
         searchCustomerFieldWrapper.style.display = "inline-block";
@@ -61,8 +64,8 @@ var optionBar = (function(){
         searchCustomerFieldWrapper.style.display = "none";
         currentRecordSearchNameLabel.style.display = "inline-block";
         currentRecordSearchName.style.display = "inline-block";
+        cancelButton.style.display = "inline-block";
         currentRecordSearchName.textContent = name;
-
         tabDisplay.style.display = "block";
     }
 
