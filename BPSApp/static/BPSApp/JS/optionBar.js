@@ -10,6 +10,9 @@ var optionBar = (function(){
     searchCustomerFieldWrapper = document.getElementsByClassName("search-customer-field-wrapper")[0];
     searchCustomerField = searchCustomerFieldWrapper.getElementsByClassName("search-customer-field")[0];
     searchSuggestions = searchCustomerFieldWrapper.getElementsByClassName("search-suggestions")[0];
+    searchSuggestionItems = searchCustomerFieldWrapper.getElementsByClassName("search-suggestion-item");
+    currentRecordSearchNameLabel = document.getElementsByClassName("current-record-search-name-label")[0];
+    currentRecordSearchName = document.getElementsByClassName("current-record-search-name")[0];
     tabDisplay = document.getElementsByClassName("tab-display")[0];
 
     // bind events
@@ -17,6 +20,10 @@ var optionBar = (function(){
     cancelCustomerAddButton.addEventListener('click', cancelCustomerAddition);
     searchCustomerField.addEventListener('focus', toggleSearchSuggestions);
     searchCustomerField.addEventListener('blur', toggleSearchSuggestions);
+
+    for (var i = 0; i < searchSuggestionItems.length; i++) {
+        searchSuggestionItems[i].addEventListener('mousedown', searchCustomer);
+    }
 
     // functions
     function showCustomerFields(event) {
@@ -43,6 +50,20 @@ var optionBar = (function(){
             searchSuggestions.style.display = "none";
             searchSuggestionsDisplayed = false;
         }
+    }
+
+    function searchCustomer(event) {
+        var searchItem = event.currentTarget;
+        var name = searchItem.textContent;
+
+        addCustomerButton.style.display = "none";
+        searchCustomerLabel.style.display = "none";
+        searchCustomerFieldWrapper.style.display = "none";
+        currentRecordSearchNameLabel.style.display = "inline-block";
+        currentRecordSearchName.style.display = "inline-block";
+        currentRecordSearchName.textContent = name;
+
+        tabDisplay.style.display = "block";
     }
 
 

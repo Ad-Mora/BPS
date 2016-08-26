@@ -129,6 +129,15 @@ body{
     border-bottom: 1px solid #cacaca;
     color: #333333;
 }
+.search-suggestion-item:hover{
+    background-color: #eeeeee;
+}
+.current-record-search-name-label{
+    display: none;
+}
+.current-record-search-name{
+    display: none;
+}
 
 /*----------Tab Display----------*/
 .tab-display{
